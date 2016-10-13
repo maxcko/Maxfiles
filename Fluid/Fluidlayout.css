@@ -52,6 +52,30 @@ img, object, embed, video {
 	display: block;
 }
 
+#Topic {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#subjectOne {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+
+#subjectTwo {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
@@ -71,6 +95,27 @@ img, object, embed, video {
 	clear: both;
 	float: left;
 	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Topic {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#subjectOne {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#subjectTwo {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
 	width: 100%;
 	display: block;
 }
@@ -105,6 +150,27 @@ img, object, embed, video {
 	float: left;
 	margin-left: 0;
 	width: 89.7959%;
+	display: block;
+}
+#Topic {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#subjectOne {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 28.5714%;
+	display: block;
+}
+#subjectTwo {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 28.5714%;
 	display: block;
 }
 }
