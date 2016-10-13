@@ -1,0 +1,73 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+
+  font-family: sans-serif;
+}
+
+div {
+	padding: 4em 1em;
+	position: relative;
+}
+
+.red {
+  color: #F00;
+}
+
+div.dark-background {
+  background-color: #eee;
+}
+
+div.border {
+  border: 2px solid #303
+  margin: auto;
+}
+
+#image img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  padding: 20px 20px;
+}
+
+#list {
+  line-height: 1.5em;
+}
+
+#table th, #table td {
+  padding: 12px;
+  border: 1px solid black;
+}
+
+#table > table {
+  border-collapse: collapse;
+}
+
+a.button {
+  border: 1px solid #303;
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #123456;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+a.button:hover {
+  background-color: #654321;
+}
+
+html {
+  background-image: url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.translucent {
+  background-color: rgba(255,255,255,0.4);
+}
