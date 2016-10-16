@@ -15,10 +15,66 @@
      
   </head>
   <body class="w3-col middleOfsc">
+  
+  <ul class="w3-navbar w3-top w3-large w3-black w3-right-align">
+  <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+  </li>
+  <li><a href="#">Home</a></li>
+  <li class="w3-hide-small"><a href="#">Link 1</a></li>
+  <li class="w3-hide-small"><a href="#">Link 2</a></li>
+  <li class="w3-hide-small"><a href="#">Link 3</a></li>
+</ul>
+
+<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+  <ul class="w3-navbar w3-left-align w3-large w3-black">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+  
   <div class=" w3-col w3-blue-grey  w3-large w3-padding-128">
   <h id="head">This is simple website</h>
   </div>
   
+  
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-fading" src="far.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="namking2.jpg" style="width:100%">
+  
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000); // Change image every 2 seconds
+}
+</script>
   
   <div class="w3-row ">
   <div class="w3-half w3-blue middleOfsc w3-padding-48">
@@ -29,7 +85,9 @@
   </div>
   </div>
   
+  
   <div class="red">
+  <script>$(".live-tile").liveTile();</script>
     <div id="tile1" class="live-tile">
         <span class="tile-title">tile title</span>
         <!-- adding the 'full' class to an 'img' or 'a' tag causes it to fill the entire tile -->
@@ -37,13 +95,10 @@
         <div><p>the front face slides vertically by default to reveal the back.</p></div>
     </div>
 </body>
-<body>
-<div class="red">
-    <div id="tile1" class="live-tile">
-        <span class="tile-title">tile title</span>
-        <!-- adding the 'full' class to an 'img' or 'a' tag causes it to fill the entire tile -->
-        <div><a class="full" href="#">front</a></div>
-        <div><p>the front face slides vertically by default to reveal the back.</p></div>
-    </div>
-</body>
+
+<script type="text/javascript">
+    // apply regular slide universally unless .exclude class is applied 
+    // NOTE: The default options for each liveTile are being pulled from the 'data-' attributes
+    $(".live-tile, .flip-list").not(".exclude").liveTile();
+</script>
 </html>

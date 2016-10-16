@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+     <link href="MetroJs.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="MetroJs.js"></script>
+<body>
+ <div class="live-tile red">
+ <p> max cko </p>
+ </div>
+ <div class="live-tile slide red">
+    <div>front</div>
+    <div>back</div>
+</div>
+<script type="text/javascript">
+    $(MetroJs.js).ready(function(){
+        $(".live-tile").liveTile();
+    });
+</script>
+</body>
+<footer class="appbar">
+        <nav>
+        <ul id="menu" class="appbar-buttons">
+            <li>
+                <a href="#" class="home"><img src="/images/1pixel.gif" alt="home" /></a>
+                <span class="charm-title">Home</span>
+            </li>
+            <li>
+                <a href="#" class="about"><img src="/images/1pixel.gif" alt="about" /></a>
+                <span class="charm-title">About</span>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="twitter"><img src="/images/1pixel.gif" alt="twitter" /></a>
+                <span class="charm-title">Twitter</span>
+            </li>
+        </ul>
+    </nav>
+    <a class="etc">&bull;&bull;&bull;</a>
+    <ul class="theme-options clear">
+         
+    </ul>
+    <ul class="base-theme-options clear">     
+    </ul>
+</footer>
+<script type="text/javascript">
+        var appBar, metroJs;
+        $(document).ready(function(){
+            appBar = $(".appbar").applicationBar({ 
+                preloadAltBaseTheme: true, 
+                bindKeyboard: true,
+                metroLightUrl: 'images/metroIcons_light.jpg',
+                metroDarkUrl: 'images/metroIcons.jpg'
+            });
+            // append the theme options 
+            metroJs = jQuery.fn.metrojs;
+            metroJs.theme.appendAccentColors({
+                accentListContainer: ".theme-options"
+            });
+            metroJs.theme.appendBaseThemes({
+                baseThemeListContainer: ".base-theme-options"
+            });
+        });
+</script>
+</html>
